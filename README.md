@@ -1,4 +1,4 @@
-# Intercom Integration in Next.js 14
+# Intercom Integration in Next.js 14 (App router)
 
 This project demonstrates how to integrate Intercom chat widget into a Next.js 14 application. It provides a robust
 setup to add Intercom to your Next.js projects using modern best practices for script loading and initialization.
