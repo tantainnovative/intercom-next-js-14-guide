@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Intercom Integration in Next.js 14
+
+This project demonstrates how to integrate Intercom chat widget into a Next.js 14 application. It provides a robust
+setup to add Intercom to your Next.js projects using modern best practices for script loading and initialization.
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed on your system:
+
+- Node.js (LTS version recommended, e.g., 14.x or 16.x)
+- npm or Yarn
+- Git
+
+Additionally, you will need an Intercom account and your Intercom app ID to complete the integration.
 
 ## Getting Started
 
-First, run the development server:
+These instructions will get you a copy of the project up and running on your local machine for development and testing
+purposes.
+
+### Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/tantainnovative/intercom-next-js-14-guide.git
+   cd intercom-nextjs-14
+   ```
+
+2. **Install the dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+   or if you use Yarn:
+
+   ```bash
+   yarn install
+   ```
+
+3. **Set up the environment variables:**
+
+   Create a `.env.local` file in the root directory of the project, and add the following line:
+
+   ```plaintext
+   NEXT_PUBLIC_INTERCOM_APP_ID=your_intercom_app_id_here
+   ```
+
+   Replace `your_intercom_app_id_here` with your actual Intercom app ID.
+
+### Running the Application
+
+To run the application locally:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+or if you use Yarn:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This will start the development server on [http://localhost:3000](http://localhost:3000). Open this URL in your browser
+to view the application.
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+- `components/`: Contains all React components including `IntercomClientComponent`.
+- `pages/`: Contains the Next.js pages.
+- `public/`: Static files like images and fonts.
+- `styles/`: CSS files for global styles.
+- `types/global.d.ts`: TypeScript declarations for extending the global namespace.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Contributions are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Explanation
+
+- **Project Description**: Begin with a brief introduction about what the repository is for.
+- **Prerequisites**: List what the user needs before starting.
+- **Getting Started**: Detailed steps to clone, setup, and run the project.
+- **Project Structure**: A brief overview of how the project is organized.
+- **Contributing**: Encourage contributions by specifying how others can contribute.
+- **License**: Mention the type of license under which the project is released.
